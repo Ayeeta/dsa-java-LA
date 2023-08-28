@@ -59,6 +59,18 @@ public class LinkedList {
         length++;
     }
 
+    public void prepend(int value){
+        Node newNode = new Node(value);
+        if(length == 0){
+            head = newNode;
+            tail = newNode;
+        }else{
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
+    }
+
     public void getLength() {
         System.out.println("Length: " + length);
     }
