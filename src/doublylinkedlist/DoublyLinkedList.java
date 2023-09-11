@@ -154,7 +154,7 @@ public class DoublyLinkedList {
        return  true;
     }
 
-    public Node remove(int index, int value){
+    public Node remove(int index){
        if(index < 0 || index >= length) return null;
        if(index == 0) return removeFirst();
        if(index == length -1) return removeLast();
